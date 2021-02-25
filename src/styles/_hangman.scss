@@ -1,0 +1,104 @@
+@import "./vars";
+
+@mixin partPosition($left, $top) {
+  left: $left;
+  top: $top;
+}
+
+.hangman {
+  height: 100%;
+  width: 30%;
+  padding-top: 40px;
+  // position: relative;
+  // background-color: aqua;
+  .hangman-part0 {
+    @include hangmanPosHeight();
+    width: 200px;
+  }
+
+  .hangman-part1 {
+    @include hangmanPosHeight();
+    width: 100px;
+    left: 130px;
+    top: 70px;
+    z-index: 1;
+  }
+
+  .hangman-part2 {
+    @include hangmanPosHeight();
+    width: 30px;
+    left: 165px;
+    top: 160px;
+  }
+
+  .hangman-part3 {
+    @include hangmanPosHeight();
+    width: 75px;
+    left: 145px;
+    top: 190px;
+    z-index: 2;
+  }
+
+  .hangman-part4 {
+    @include hangmanPosHeight();
+    width: 80px;
+    left: 195px;
+    top: 190px;
+    z-index: 2;
+  }
+
+  .hangman-part5 {
+    @include hangmanPosHeight();
+    width: 80px;
+    left: 90px;
+    top: 190px;
+    z-index: 2;
+  }
+
+  .hangman-part6 {
+    @include hangmanPosHeight();
+    width: 20px;
+    left: 260px;
+    top: 250px;
+    z-index: 0;
+  }
+
+  .hangman-part7 {
+    @include hangmanPosHeight();
+    width: 20px;
+    left: 85px;
+    top: 253px;
+    z-index: 1;
+  }
+
+  .hangman-part8 {
+    @include hangmanPosHeight();
+    width: 60px;
+    left: 185px;
+    top: 295px;
+    z-index: 1;
+  }
+
+  .hangman-part9 {
+    @include hangmanPosHeight();
+    width: 60px;
+    left: 120px;
+    top: 295px;
+    z-index: 1;
+  }
+
+  .hangman-part10 {
+    @include hangmanPosHeight();
+    width: 50px;
+    left: 30px;
+    left: 215px;
+    top: 410px;
+  }
+
+  .hangman-part11 {
+    @include hangmanPosHeight();
+    width: 50px;
+    left: 100px;
+    top: 410px;
+  }
+}

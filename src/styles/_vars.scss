@@ -1,0 +1,15 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin hangmanPosHeight {
+  height: auto;
+  position: absolute;
+}
+
+//Colors
+$grey: #53555d;
+$blue: #4d69fa;
+$orange: rgb(255, 196, 0);
+$white: rgb(235, 235, 235);

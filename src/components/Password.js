@@ -19,13 +19,3 @@ const Password = ({ word, correctLetters }) => {
 };
 
 export default Password;
-
-/* <Letter key={i} value={letter} /> */
-/* <div className="letter" key={i}>
-            {correctLetters.includes(letter) ? letter : ""}
-          </div> */
-
-// return (
-//   <div className="letter" key={i}>
-//     {correctLetters.includes(letter) ? letter : ""}
-//   </div>

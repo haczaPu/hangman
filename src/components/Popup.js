@@ -6,7 +6,7 @@ const handleNewWordBtn = () => {
 
 const Popup = ({ gameOver, win, word, correctLetters, missedLetters }) => {
   return (
-    <div>
+    <div className="popup">
       {gameOver ? (
         <div className="gameOver">
           <div>GAME OVER</div>
@@ -32,25 +32,3 @@ const Popup = ({ gameOver, win, word, correctLetters, missedLetters }) => {
 };
 
 export default Popup;
-
-// const Popup = ({ gameOver, word, correctLetters, missedLetters }) => {
-//   return (
-//     <div>
-//       {gameOver ? (
-//         <div className="gameOver">
-//           <div>GAME OVER</div>
-//           <div className="popup-word">WORD: {word}</div>
-//           <button onClick={handleNewWordBtn}>NEW WORD</button>
-//         </div>
-//       ) : (
-//         ""
-//       )}
-
-//       {correctLetters.length === 0 && missedLetters.length === 0 ? (
-//         <div className="start-info">Type any letter to guess the word</div>
-//       ) : (
-//         ""
-//       )}
-//     </div>
-//   );
-// };

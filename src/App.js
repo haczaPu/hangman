@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useKey } from "react-use";
-import "./Styles.css";
+import "./styles/Styles.css";
 import Password from "./components/Password";
 import MissedLetters from "./components/MissedLetters";
 import Hangman from "./components/Hangman";
@@ -38,22 +38,6 @@ const App = () => {
       }
     }
   });
-
-  // useEffect(() => {
-  //   const handleKeydown = event => {
-  //     const { key, keyCode } = event;
-  //     if (keyCode >= 65 && keyCode <= 90 && win === false && gameOver === false) {
-  //       if (word.some(letter => letter === key)) {
-  //         setCorrectLetters([...correctLetters, key]);
-  //       } else if (!missedLetters.includes(key)) {
-  //         setMissedLetters([...missedLetters, key]);
-  //       } else {
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener("keydown", handleKeydown);
-  // });
 
   //Check lose
   useEffect(() => {
